@@ -1,0 +1,62 @@
+{
+  "kit": "1",
+  "repo": "munincloud-conector-contasol",
+  "programa": "Contasol",
+  "marca": {
+    "nombre": "Contasol®",
+    "titular": "Software DELSOL"
+  },
+  "descripcion": "De la respuesta v1 de la API de auditoría de facturas de MuninCloud a Contasol: IVS.ods + APU.ods de las facturas recibidas.",
+  "pieza_comun": {
+    "fichero": "munincloud_v1.py",
+    "version": "1.3.0",
+    "md5": "dc9d2ece966f711e96533164f4e989fa"
+  },
+  "mi_nif": "B00000018",
+  "ejecutar": [
+    "python3",
+    "munincloud_contasol.py",
+    "--mi-nif",
+    "{MI_NIF}",
+    "--salida",
+    "{SALIDA}",
+    "--maestro",
+    "ejemplos/proveedores.csv",
+    "--libro-iva",
+    "1",
+    "--diario",
+    "1",
+    "--cuenta-iva",
+    "472",
+    "--cuenta-gasto",
+    "629",
+    "--cuenta-retencion",
+    "4751",
+    "{ENTRADAS}"
+  ],
+  "importables": [
+    "IVS.ods",
+    "APU.ods"
+  ],
+  "revisar": {
+    "fichero": "revisar.csv",
+    "columna_documento": "documento",
+    "solo_si": null
+  },
+  "omitidos": "omitidos.csv",
+  "desafinados": [
+    "pruebas/datos/desafinada__cuota.json",
+    "pruebas/datos/desafinada__obligatorio.json"
+  ],
+  "ficheros": [
+    "munincloud_contasol.py",
+    "munincloud_v1.py",
+    "ejemplos/entrada/*.json",
+    "ejemplos/salida/*",
+    "ejemplos/proveedores.csv",
+    "pruebas/test_conector.py",
+    "pruebas/test_contasol.py",
+    "pruebas/via_b.py",
+    "pruebas/datos/*.json"
+  ]
+}

@@ -1,0 +1,5 @@
+"documento";"trabajo";"codigo";"mensaje"
+"compras__redondeo_base.json";"trb_00000000000000000000000103";"AJUSTE_REDONDEO";"las líneas difieren de la cabecera en 0.01 de base y 0.00 de cuota: redondeo, fundido en la línea y el registro del 21 %"
+"compras__redondeo_cuota.json";"trb_00000000000000000000000104";"AJUSTE_REDONDEO";"las líneas difieren de la cabecera en 0.00 de base y -0.01 de cuota: redondeo, fundido en la línea y el registro del 21 %"
+"contasol__numero_largo.json";"trb_00000000000000000000000103";"CONTASOL_NUMERO_RECORTADO";"el número «FRA-2026-SERIE-A-000123» pasa de 12 caracteres: va como «RIE-A-000123» y completo en BV"
+"contasol__numero_largo.json";"trb_00000000000000000000000103";"CONTASOL_CAMPO_RECORTADO";"el nombre del proveedor pasa de 100 caracteres y va recortado (F)"
